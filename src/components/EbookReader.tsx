@@ -167,32 +167,72 @@ export const EbookReader: React.FC<EbookReaderProps> = ({ onConsultAi }) => {
               )}
             </div>
 
-            {/* Bộ lọc theo Chương */}
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
-              <button
-                onClick={() => setSelectedChapter('all')}
-                className={`px-2.5 py-1 rounded-lg shrink-0 font-medium transition-colors ${
-                  selectedChapter === 'all'
-                    ? 'bg-sky-600 text-white shadow-sm'
-                    : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
-                }`}
-              >
-                Tất cả (24)
-              </button>
-              {CHAPTERS.map((ch) => (
+            {/* Bộ lọc theo Chương (Hiển thị 2 hàng đầy đủ, không cuộn) */}
+            <div className="space-y-1.5 text-xs">
+              <div className="grid grid-cols-3 gap-1.5">
                 <button
-                  key={ch.id}
-                  onClick={() => setSelectedChapter(ch.id)}
-                  className={`px-2.5 py-1 rounded-lg shrink-0 font-medium transition-colors ${
-                    selectedChapter === ch.id
+                  type="button"
+                  onClick={() => setSelectedChapter('all')}
+                  className={`py-1.5 px-2 rounded-lg text-center font-semibold transition-all ${
+                    selectedChapter === 'all'
                       ? 'bg-sky-600 text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
+                      : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
                   }`}
-                  title={ch.title}
                 >
-                  Chương {ch.id}
+                  Tất cả (24)
                 </button>
-              ))}
+                <button
+                  type="button"
+                  onClick={() => setSelectedChapter(1)}
+                  className={`py-1.5 px-2 rounded-lg text-center font-semibold transition-all ${
+                    selectedChapter === 1
+                      ? 'bg-sky-600 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  }`}
+                  title={CHAPTERS[0].title}
+                >
+                  Chương 1
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedChapter(2)}
+                  className={`py-1.5 px-2 rounded-lg text-center font-semibold transition-all ${
+                    selectedChapter === 2
+                      ? 'bg-sky-600 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  }`}
+                  title={CHAPTERS[1].title}
+                >
+                  Chương 2
+                </button>
+              </div>
+
+              <div className="grid grid-cols-2 gap-1.5">
+                <button
+                  type="button"
+                  onClick={() => setSelectedChapter(3)}
+                  className={`py-1.5 px-2 rounded-lg text-center font-semibold transition-all ${
+                    selectedChapter === 3
+                      ? 'bg-sky-600 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  }`}
+                  title={CHAPTERS[2].title}
+                >
+                  Chương 3
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedChapter(4)}
+                  className={`py-1.5 px-2 rounded-lg text-center font-semibold transition-all ${
+                    selectedChapter === 4
+                      ? 'bg-sky-600 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-navy-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  }`}
+                  title={CHAPTERS[3].title}
+                >
+                  Chương 4
+                </button>
+              </div>
             </div>
 
             {/* Danh sách 24 Chuyên đề */}
