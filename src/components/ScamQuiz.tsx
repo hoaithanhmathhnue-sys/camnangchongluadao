@@ -311,7 +311,7 @@ export const ScamQuiz: React.FC = () => {
                 /* Bản Chứng nhận */
                 <div className="p-6 rounded-2xl bg-white dark:bg-navy-950 border border-amber-300 dark:border-amber-800/80 shadow-md text-center space-y-3 animate-fade-in relative">
                   <div className="text-[10px] uppercase font-bold tracking-widest text-amber-600 dark:text-amber-400">
-                    CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — ĐỀ TÀI KHKT 2025-2026
+                    CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM — ĐỀ TÀI KHKT 2026-2027
                   </div>
                   <h4 className="text-lg font-black text-slate-900 dark:text-white uppercase">
                     CHỨNG NHẬN CÔNG DÂN SỐ AN TOÀN 4.0

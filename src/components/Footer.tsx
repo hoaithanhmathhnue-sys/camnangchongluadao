@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
               Đề tài: “Giải pháp nâng cao nhận thức và kỹ năng nhận diện, phòng chống lừa đảo trực tuyến trong kỷ nguyên số 4.0”
             </p>
             <p className="font-semibold text-slate-700 dark:text-slate-300">
-              Nhóm tác giả: Học sinh Lớp 11H — Trường THPT Khúc Thừa Dụ (Năm học 2025 - 2026)
+              Nhóm tác giả: Học sinh Lớp 11H — Trường THPT Khúc Thừa Dụ (Năm học 2026 - 2027)
             </p>
           </div>
 
