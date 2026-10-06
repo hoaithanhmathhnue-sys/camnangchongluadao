@@ -1,6 +1,6 @@
 # 🛡️ CẨM NANG NHẬN BIẾT VÀ PHÒNG CHỐNG LỪA ĐẢO TRỰC TUYẾN 4.0
 ### Sách Điện Tử Tương Tác (Interactive E-Book) Tích Hợp Trí Tuệ Nhân Tạo (AI)
-> **Dự án Nghiên cứu Khoa học Kỹ thuật (KHKT) Dành cho Học sinh Trung học — Năm học 2025 - 2026**  
+> **Dự án Nghiên cứu Khoa học Kỹ thuật (KHKT) Dành cho Học sinh Trung học — Năm học 2026 - 2027**  
 > **Đơn vị:** Nhóm học sinh Lớp 11H — Trường THPT Khúc Thừa Dụ (Ninh Giang, Hải Dương)
 
 ---
